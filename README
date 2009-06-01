@@ -1,0 +1,15 @@
+RSpec Plugin generator
+======================
+
+This is a generator that will create a new Rails plugin with RSpec support. The specs can be run as part of a hosting application or standalone in a CI setup.
+
+Install:
+  sudo gem install defred-plugin_with_rspec_generator
+
+Usage: (In your rails app)
+  script/generate plugin_with_rspec <my_plugin>
+
+What you get:
+
+The plugin contains a spec directory which in turn contains a minimal Rails app as support for your specs. It is set up to use SQLite as the DB. Using a mini-Rails app inside the specs allows you to test the full set of extension points available to a plugin.
+The schema for the models is specified in the config/schema.rb file which is used to regenerate the database on every run of the specs.
