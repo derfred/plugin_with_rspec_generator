@@ -1,0 +1,7 @@
+Description:
+    This will create a basic plugin which is fully setup for RSpec testing. Including Controllers, Models and Helpers.
+ 
+Examples:
+    ./script/generate plugin_with_rspec my_plugin
+
+        This will create a plugin called my_plugin
